@@ -1,0 +1,51 @@
+LUMI PWA PARA GITHUB PAGES
+==========================
+
+ESTE ZIP YA ESTÁ LISTO PARA SUBIR A GITHUB.
+
+ARCHIVOS QUE DEBE SUBIR
+-----------------------
+Suba TODO lo que está dentro de esta carpeta:
+- index.html
+- styles.css
+- app.js
+- sw.js
+- offline.html
+- manifest.webmanifest
+- .nojekyll
+- carpeta icons
+
+NO suba la carpeta exterior completa como una sola carpeta.
+Los archivos deben quedar directamente en la raíz del repositorio.
+
+PASOS
+-----
+1. Abra su repositorio LUMI-PWA.
+2. Entre a "Add file" > "Upload files".
+3. Elimine de la lista firebase.json, LEEME_PRIMERO.txt y PASOS_POWERSHELL.txt,
+   porque esos eran para Firebase.
+4. Arrastre TODOS los archivos de este ZIP.
+5. Pulse "Commit changes".
+6. Vaya a Settings.
+7. En el menú izquierdo, abra Pages.
+8. En "Build and deployment":
+   - Source: Deploy from a branch
+   - Branch: main
+   - Folder: / (root)
+9. Pulse Save.
+10. Espere entre 1 y 5 minutos.
+11. GitHub mostrará un enlace parecido a:
+    https://SU-USUARIO.github.io/LUMI-PWA/
+
+INSTALAR EN ANDROID
+-------------------
+1. Abra el enlace en Google Chrome.
+2. Pulse "Instalar LUMI".
+3. Si no aparece, pulse los tres puntos de Chrome.
+4. Seleccione "Instalar aplicación" o "Agregar a pantalla principal".
+5. Confirme.
+
+IMPORTANTE
+----------
+Esta versión es un lanzador PWA.
+Al pulsar "Ingresar a LUMI", abre la aplicación actual de Google Apps Script.
