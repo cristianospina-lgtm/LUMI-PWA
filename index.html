@@ -2,24 +2,52 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
   <meta name="theme-color" content="#092f54">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent"
+  >
   <meta name="mobile-web-app-capable" content="yes">
 
   <title>LUMI</title>
 
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" href="./icons/favicon-32.png">
-  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./favicon-32.png"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./apple-touch-icon.png"
+  >
+
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <main class="app-shell">
     <section class="welcome-card">
+
       <div class="logo-wrap">
-        <img src="./icons/icon-192.png" alt="Logo LUMI" class="logo">
+        <img
+          src="./icon-192.png"
+          alt="Logo LUMI"
+          class="logo"
+          width="192"
+          height="192"
+        >
       </div>
 
       <span class="institutional-chip">
@@ -27,31 +55,52 @@
       </span>
 
       <h1>LUMI</h1>
-      <p class="subtitle">Plataforma Integral de Salud Pública</p>
+
+      <p class="subtitle">
+        Plataforma Integral de Salud Pública
+      </p>
 
       <div class="status-card">
-        <span id="statusDot" class="status-dot"></span>
-        <span id="connectionStatus">Verificando conexión…</span>
+        <span
+          id="statusDot"
+          class="status-dot"
+          aria-hidden="true"
+        ></span>
+
+        <span id="connectionStatus">
+          Verificando conexión…
+        </span>
       </div>
 
-      <button id="installButton" class="secondary hidden" type="button">
+      <button
+        id="installButton"
+        class="secondary hidden"
+        type="button"
+      >
         Instalar LUMI
       </button>
 
-      <button id="openLumiButton" class="primary" type="button">
+      <button
+        id="openLumiButton"
+        class="primary"
+        type="button"
+      >
         Ingresar a LUMI
       </button>
 
       <p class="help">
-        En Android, abra esta página en Chrome y pulse
+        En Android, abra esta página en Google Chrome y pulse
         <strong>Instalar LUMI</strong>.
       </p>
+
     </section>
   </main>
 
   <script>
-    window.LUMI_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzUvDyhUBrwxCwPSPDeOCNpMOiTLcxSpG2gyJUBVOqwBa7UieCPzIq1FF8q9Ox6n6vJkw/exec";
+    window.LUMI_WEB_APP_URL =
+      "https://script.google.com/macros/s/AKfycbzUvDyhUBrwxCwPSPDeOCNpMOiTLcxSpG2gyJUBVOqwBa7UieCPzIq1FF8q9Ox6n6vJkw/exec";
   </script>
+
   <script src="./app.js"></script>
 </body>
 </html>
